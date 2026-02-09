@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
 
                 Image.asset(
                   'assets/images/logo_4.png',
-                  height: 200,
+                  height: 140,
                 ),
 
                 const SizedBox(height: 16),
@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(height: 6),
 
                 const Text(
-                  'Gestiona tus vehículos',
+                  'Crea tu cuenta',
                   style: TextStyle(
                     fontSize: 15,
                     color: Color(0xFF6B7280),
@@ -60,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        'Iniciar Sesión',
+                        'Registro',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -102,6 +102,24 @@ class LoginScreen extends StatelessWidget {
                         suffixIcon: Icons.visibility_outlined,
                       ),
 
+                      const SizedBox(height: 16),
+
+                      const Text(
+                        'Confirmar contraseña',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+
+                      const SizedBox(height: 8),
+
+                      _fakeInput(
+                        icon: Icons.lock_outline,
+                        hint: '••••••••',
+                        suffixIcon: Icons.visibility_outlined,
+                      ),
+
                       const SizedBox(height: 24),
 
                       SizedBox(
@@ -118,7 +136,7 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           child: const Text(
-                            'Iniciar Sesión',
+                            'Registrarse',
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -152,11 +170,11 @@ class LoginScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
                           Text(
-                            '¿No tienes una cuenta? ',
+                            '¿Ya tienes cuenta? ',
                             style: TextStyle(fontSize: 13),
                           ),
                           Text(
-                            'Regístrate aquí',
+                            'Inicia sesión',
                             style: TextStyle(
                               fontSize: 13,
                               color: Colors.orange,
@@ -175,7 +193,7 @@ class LoginScreen extends StatelessWidget {
                   alignment: WrapAlignment.center,
                   children: const [
                     Text(
-                      'Al iniciar sesión, aceptas nuestros ',
+                      'Al registrarte, aceptas nuestros ',
                       style: TextStyle(fontSize: 12),
                     ),
                     Text(

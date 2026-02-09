@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         scaffoldBackgroundColor: Colors.white,
       ),
-      initialRoute: AppRoutes.login,
+      initialRoute: AppRoutes.settings,
       routes: AppRoutes.routes,
     );
   }
