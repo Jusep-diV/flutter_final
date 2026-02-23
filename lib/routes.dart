@@ -3,6 +3,7 @@ import 'screens/auth/login_screen.dart';
 import 'screens/auth/register_screen.dart';
 import 'screens/vehicles/home_screen.dart';
 import 'screens/settings/settings_screen.dart';
+import 'screens/vehicles/add_vehicle_screen.dart';
 
 class AppRoutes {
   // Names
@@ -10,6 +11,7 @@ class AppRoutes {
   static const String register = '/register';
   static const String home = '/home';
   static const String settings = '/settings';
+  static const String addVehicle = '/add-vehicle';
   
 
   // Map
@@ -18,5 +20,6 @@ class AppRoutes {
     register: (context) => const RegisterScreen(),
     home: (context) => const HomeScreen(),
     settings: (context) => const SettingsScreen(),
+    addVehicle: (context) => const AddVehicleScreen(),
   };
 }

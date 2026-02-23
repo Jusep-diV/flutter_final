@@ -8,12 +8,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Vehicle Manager',
+      title: 'Fleet Manager',
       theme: ThemeData(
         primarySwatch: Colors.orange,
         scaffoldBackgroundColor: Colors.white,
       ),
-      initialRoute: AppRoutes.settings,
+      initialRoute: AppRoutes.login,
       routes: AppRoutes.routes,
     );
   }
